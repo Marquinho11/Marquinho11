@@ -1,0 +1,14 @@
+Linguagem de Programação
+
+
+Python 3.11
+
+Bliotecas
+
+customtkinter
+tkinter
+
+banco de dados
+
+SQLITE3
+

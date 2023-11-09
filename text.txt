@@ -1,0 +1,146 @@
+  self.cursor.execute('CREATE TABLE IF NOT EXISTS contact(Complemento INTEGER(40) NOT NULL,largura INTEGER(20) NOT NULL,fantasma INTEGER(40) NOT NULL,descricao CHAR(100) NOT NULL,modelo CHAR(40)NOT NULL,
+                      cod INTEGER(40) NOT NULL,
+                      descricao_cd CHAR(40) NOT NULL,
+                      codigo_barras CHAR(50),
+                      localidade CHAR(50),
+                      codigo_v CHAR(50),
+                      vazio CHAR(40),
+                      previa INTEGER(40) NOT NULL,
+                      codigo_avulso INTEGER(40) NOT NULL,
+                      passada CHAR(40),
+                      faltante CHAR(40),
+                      faltante_f CHAR(40),
+                      new_column CHAR(40),
+                      new CHAR(40)
+
+                      );
+                      ')
+
+
+essa funcao serve para exportar arquivo para o excel
+
+
+
+def exporta_clientes():
+    conexao = sqlite3.connect('clientes.db')
+    c = conexao.cursor()
+
+    # Inserir dados na tabela:
+    c.execute("SELECT *, oid FROM clientes")
+    clientes_cadastrados = c.fetchall()
+    # print(clientes_cadastrados)
+    clientes_cadastrados=pd.DataFrame(clientes_cadastrados,columns=['nome','sobrenome','email','telefone','Id_banco'])
+    clientes_cadastrados.to_excel('clientes.xlsx')
+
+    # Commit as mudanças:
+    conexao.commit()
+
+    # Fechar o banco de dados:
+    conexao.close()
+
+
+
+            "INSERT INTO contact(Complemento) VALUES (?)",
+                (row))
+
+
+
+
+             (row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row)
+
+
+
+
+             self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo,self.arquivo)
+
+
+
+
+
+
+("INSERT INTO contact(Complemento, largura, fantasma, descricao, modelo, cod, descricao_cd, codigo_barras, localidade, codigo_v, vazio, previa, codigo_avulso, passada, faltante, faltante_f, new_column,new) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                                (row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row,row))
+
+
+
+
+
+
+
+
+
+
+
+
+"INSERT INTO contact(Complemento, largura, fantasma, descricao, modelo, cod, descricao_cd, codigo_barras, localidade, codigo_v, vazio, previa, codigo_avulso, passada, faltante, faltante_f, new_column,new) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                                (columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns,columns))
+
+
+
+
+
+
+
+
+
+
+
+(self.row[0], self.row[1], self.row[2], self.row[3], self.row[4], self.row[5], self.row[6], self.row[7], self.row[8], self.row[9], self.row[10],
+                                        self.row[11], self.row[12],self.row[13], self.row[14], self.row[15], self.row[16], self.row[17]))
+
+
+
+
+
+
+
+
+
+
+                                (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10],
+                                        row[11], row[12],row[13], row[14], row[15], row[16], row[17]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Complemento, largura, fantasma, descricao, modelo, cod, descricao_cd, codigo_barras, localidade, codigo_v, vazio, previa, codigo_avulso, passada, faltante, faltante_f, new_column, new
+
+
+                                     id INTEGER(20),
+                        complemento INTEGER(40),
+                        largura INTEGER(40),
+                        avulso TEXT,
+                        modelo TEXT,
+                        ambiente TEXT,
+                        id_peça INTEGER(40),
+                        codigo_barras TEXT,
+                        id_de_peça TEXT,
+                        vazio1 TEXT,
+                        vazio2 TEXT,
+                        cliente TEXT,
+                        codigo_avulso TEXT,
+                        vazio3 TEXT,
+                        mod TEXT,
+                        codigo_de_barras TEXT,
+                        espessura TEXT,
+                        indentidade_da_peça TEXT
+
+
+
+
+
+
+
+
+
